@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react';
+import { axiosInstance } from './Axios';
+import Button from '@mui/material/Button';
+import { Box, Container } from '@mui/material';
+import { Stack } from '@mui/system';
+import { BoxWrapper } from './UiComponents';
 
-function App() {
+const App = () => {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    const getUsers = async () => {
+      const data = await axiosInstance.get('/users').then(res => res.data);
+      setUsers(data);
+      console.log(data);
+    };
+    getUsers();
+
+    return () => {};
+  }, []);
+
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
+    <Container maxWidth='100%'>
+      {/* <Stack direction={'row'}> */}
+        <BoxWrapper
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <>
+          <span>UserList</span>
+          {users.map(({ name, email }) => (
+            <div key={email}>{name}</div>
+          ))}
+          </>
+          <Button variant='contained'>Contained</Button>
+        </BoxWrapper>
+      {/* </Stack> */}
+    </Container>
   );
-}
+};
 
 export default App;

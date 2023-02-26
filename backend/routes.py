@@ -27,7 +27,7 @@ async def fetch_users(id: int, session: Session = Depends(get_session)):
     return session.query(User).get(id)
 
 
-@user.post('/users')
+@user.post('/')
 async def create_user(user: schemas.User, session: Session = Depends(get_session)):
     # implement email already exists
     item = User(email=user.email, password=user.password, name=user.name)
@@ -55,10 +55,3 @@ async def delete_user(id: int, session: Session = Depends(get_session)):
     session.commit()
     session.close()
     return 'Item was deleted.'
-
-
-# exception handling
-# error handling
-# dockerize app -> Dockerfile, docker compose
-# password encryption/decryption
-# user login

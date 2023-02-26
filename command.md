@@ -9,3 +9,14 @@
 9. add requirements.txt to backend ```pip freeze > requirements.txt```
 10. delete .git hidden folders from sub-folders in order to commit whole under fastapi-react folder
 11. before committing add files from both sub-folders as ```git add .```
+
+
+# To Do :-)
+# exception handling
+# error handling
+# dockerize app -> Dockerfile, docker compose
+# password encryption/decryption
+# user login
+# authorization authentication
+# web cookies, user session, cache, nginx, redis
+# dark mode
