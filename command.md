@@ -8,4 +8,4 @@
 8. backend to start fastapi application ```uvicorn index:app --reload```
 9. add requirements.txt to backend ```pip freeze > requirements.txt```
 10. delete .git hidden folders from sub-folders in order to commit whole under fastapi-react folder
-11. before committing add files from both sub-folders as ```git add .\frontend .\backend```
+11. before committing add files from both sub-folders as ```git add .```
