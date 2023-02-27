@@ -34,7 +34,7 @@ async def create_user(user: schemas.User, session: Session = Depends(get_session
     session.add(item)
     session.commit()
     session.refresh(item)
-    return item
+    return f'{item.name} user added successfully!'
 
 
 @user.put('/{id}')
