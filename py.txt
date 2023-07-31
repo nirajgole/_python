@@ -1,0 +1,9 @@
+dunder/magic methods
+lamda functions
+
+python style guide - PEP8
+web-scrapping
+
+Find free courses for AI/ML/NLP/DEEP_LEARNING/PY
+Find projects to learn about AI/ML
+coursera, udemy
