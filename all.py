@@ -6,7 +6,7 @@
 # print(all([0,12,3,4,5]))
 
 
-def increment_string(strng):
+def increment_string(strng:str)->str:
     intrl=''
     strl=''
     for i in strng:
