@@ -19,8 +19,8 @@
 #     file.read()
 
 # write to file
-with open('fileName.txt', 'w') as file:
-    file.write('Hello World')
+with open("fileName.txt", "w") as file:
+    file.write("Hello World")
 
 # flags
 # 'r' - read
