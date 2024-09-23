@@ -1,2 +1,8 @@
 .vscode
 __pycache__
+*.pyc
+*~
+env
+db.sqlite3
+/static
+.DS_Store
