@@ -1,37 +1,17 @@
-### Data Structure
-> containers storing data in specific memory layout
-- Arrays
-- Linked List
-- Hash Map
-- Stack
-- Queue
-- Heap
-- Tree
-- Graph
+### Array
+' | Py | Java | C++
+ | - | -| - | -
+Static | - | NativeArray | NativeArray
+Dynamic | list | ArrayList | std::vector
 
-DS | Py | C++ | Java
---|--|--|--
-Array | List | Native Array <br/> std::vector | Native Array <br> ArrayList
-Hash Table |dictionary | std::map | HashMap <br/> LinkedHashMap
-Linked List | NA |std::list | LinkedList
+Contiguous memory blocks. - Array\
+Dynamic memory blocks - List
 
-### Patterns
-- Sliding Window
-- Two Pointer
-- Fast and Slow Pointer
-- Merge Intervals
-- Cyclic Sort
-- In-Place reversal of linked list
-- Tree BFS
-- Tree DFS
-- Two Heaps
-- Subsets
-- Modified Binary Search
-- Top K-elements
-- K-way Merge
-- Topological Sort
+Static - fixed size\
+Dynamic - Size grows dynamically
 
-### Big O Notation
+Elements with same data/Object Type - Homogeneous\
+Elements with different data/Object Types - Heterogeneous
 
-> how running TIME or SPACE requirements for your program grows as input size grows.
-
+Iterate over array = O(n)\
+Array Lookup using Index = O(1)
