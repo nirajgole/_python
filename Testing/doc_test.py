@@ -6,7 +6,7 @@ def add(a, b):
     300
     """
     # return a * b #for this doctest will fail
-    return a * b #for this doctest will success
+    return a + b #for this doctest will success
 
 
 print(add(2, 3))
