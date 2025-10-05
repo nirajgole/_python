@@ -1,8 +1,8 @@
 dunder/magic methods
-lamda functions
+lambda functions
 
 python style guide - PEP8
-web-scrapping
+Official API or web-scrapping
 
 argparser
 star_args
